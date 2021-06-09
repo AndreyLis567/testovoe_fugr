@@ -1,0 +1,45 @@
+ul.pagination {
+   display: inline-block;
+   padding: 0;
+   margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+   color: #303f9f;;
+   float: left;
+   padding: 8px 16px;
+   text-decoration: none;
+}
+
+.item.active .link {
+   z-index: 3;
+   color: #fff;
+   background-color: #303f9f;
+   border-color: #303f9f;
+}
+
+.link {
+   position: relative;
+   display: block;
+   color: #303f9f;
+   text-decoration: none;
+   background-color: #fff;
+   border: 1px solid #dee2e6;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+a {
+   color: #303f9f;
+   text-decoration: underline;
+}
+
+a:hover {
+   background-color: #94a3ea
+}
+
+.item.disabled a{
+   color: gray;
+   pointer-events: none;
+ }
